@@ -4,20 +4,25 @@
 
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 using namespace std;
 
 // Template definition for half function
 template <typename T>
+// Returns half of the value for floating point types 
 T half(T number)
 {
 	return number / 2.0;
 }
 
-int half(int number)
+template <> 
+// Returns half of the value for integer types and rounds up or down depending on the value
+ int half(int number)
 {
-	return static_cast<int>(round(number/2.0));
+	return static_cast<int>(round(number/2.0)); 
 }
 
+ // Driver to test functions and displays output
 int main()
 {
 	double a = 7.0;
