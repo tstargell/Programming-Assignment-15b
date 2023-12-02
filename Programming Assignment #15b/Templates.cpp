@@ -10,12 +10,12 @@ using namespace std;
 template <typename T>
 T half(T number)
 {
-	return number * 0.5;
+	return number / 2.0;
 }
 
 int half(int number)
 {
-	return number / 0.5;
+	return static_cast<int>(round(number/2.0));
 }
 
 int main()
