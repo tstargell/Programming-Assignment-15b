@@ -13,6 +13,11 @@ T half(T number)
 	return number * 0.5;
 }
 
+int half(int number)
+{
+	return number / 0.5;
+}
+
 int main()
 {
 	double a = 7.0;
