@@ -3,10 +3,15 @@
 // December 1, 2023
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
-// Function prototype
-half()
+// Template definition for half function
+template <typename T>
+T half(T number)
+{
+	return number * 0.5;
+}
 
 int main()
 {
@@ -17,9 +22,6 @@ int main()
 	cout << half(a) << endl;
 	cout << half(b) << endl;
 	cout << half(c) << endl;
+	return 0;
 }
 
-half
-{
-
-}
