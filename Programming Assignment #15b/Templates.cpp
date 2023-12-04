@@ -15,9 +15,9 @@ T half(T number)
 	return number / 2.0;
 }
 
-template <> 
+template int half <int>(int);
 // Returns half of the value for integer types and rounds up or down depending on the value
- int half(int number)
+int half(int number)
 {
 	return static_cast<int>(round(number/2.0)); 
 }
